@@ -1,0 +1,56 @@
+QtScr v0.9 30/05/2003
+---------------------
+
+He aquí mi lector de pantallas del Spectrum. No será el mejor, ni el más
+completo, ni tan siquiera el de funcionamiento más perfecto. Pero es el mío.
+:-)
+
+Supongo que cualquier momento es bueno para compartir lo que uno ha hecho con
+la mejor intención del mundo. La cosa es que este programa lo inicié en el año
+1999 con la intención de aprender a usar, al menos un poco, las librerías Qt
+de TrollTech. Empecé por coger el ejemplo "Hello" y trastear con él, tocar
+cosillas y ver que pasaba. Después, cuando decidí convertirlo en un visor
+completo invertí una inusual cantidad de tiempo en ver como de deprisa era
+capaz de escribir en la pantalla consumiendo la menor cantidad de tiempo de CPU
+posible. La idea no era otra que terminar convirtiéndolo en un emulador usable
+cosa que, a día de hoy, ni siquiera he intentado.
+
+Lo que yo podía considerar "funcionalidad básica" está implementada aunque,
+como todo en esta vida, es manifiestamente mejorable. Invito al usuario
+interesado a hacer cualquier tipo de sugerencia *constructiva*.
+
+Dado que está codificado haciendo uso de las librerías Qt, es posible
+compilarlo con mínimas o nulas dificultades en varias plataformas.
+Personalmente, lo he compilado en Linux y en Solaris 8 (Sparc e Intel), aunque
+no creo que haya muchas dificultades en compilarlo en cualquier otra plataforma
+soportada por la librería Qt. También es posible compilarlo usando varias
+versiones de la Qt. El programa nació en los tiempos de la versión 1.42 y,
+tiempo después, lo convertí a la versión 2.0 que es la versión que yo diría que
+es la mínima necesaria. Actualmente trabajo con la versión 3.1.2 y, a decir
+verdad, no tengo ningún interés por mantener una versión que sea compilable en
+todas las releases de la Qt. :-)
+
+Añadiré también que mi librería Qt está compilada con soporte para threads,
+aunque huelga decir que no es en absoluto necesario disponer de ellos.
+
+Compilar el programa es fácil:
+
+qmake QtScr.pro
+make
+lrelease QtScr.pro (para crear los ficheros con las traducciones)
+
+y ya tienes un ejecutable llamado QtScr listo para consumir (procura no dejarlo
+enfriar).
+
+Por aquello de poder observar las pantallas de presentación de nuestro querido
+ZX Spectrum sin que moleste ningún tipo de elemento gráfico he "escondido" 
+lo que debiera ser el menú principal en un menú popup accesible pulsando el
+botón derecho del ratón. Entiendo que las opciones son autoexplicativas. ;-)
+
+Espero que sea útil este programa a alguien más. Con los fuentes puedes hacer
+lo que mejor te parezca, ya que no tengo intención de hacer nada comercial con
+ellos. En todo caso, si contienen alguna idea o pedazo de código que crees te
+puede ser útil y deseas hinchar un poco mi ego, házmelo saber. :-DD
+
+José Luis
+jsanchez@todounix.homeip.net
